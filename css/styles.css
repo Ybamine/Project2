@@ -1,0 +1,465 @@
+/* Normalize.css  */
+
+@import 'normalize.css';
+
+/* Web Fonts */
+@font-face {
+  font-family: 'Oswald';
+  src: url("https://fonts.googleapis.com/css?family=Oswald");
+}
+
+/*Base styles*/
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  margin: 0;
+  padding: 5px 0 25px 0;
+  width: 100%;
+}
+
+body {
+  background: #fff;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-family: 'Heebo', sans-serif;
+  margin: 9px;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: 'OpenSans', sans-serif;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-family: 'Heebo', sans-serif;
+  text-align: center;
+}
+
+p {
+  font-size: 1em;
+  font-family: 'OpenSans', sans-serif;
+  margin: 0 10px 15px;
+  text-align: center;
+}
+
+/*Psuedo Classes*/
+
+a:link {
+ color: #33425B; /*unvisited link*/
+ text-decoration: none;
+}
+
+a:visited {
+  color: #33425B; /*visited link*/
+  text-decoration: none;
+}
+
+a:hover {
+  color: #87DFD6; /*on hover*/
+  text-decoration: none;
+}
+
+
+/*Main Styles*/
+
+
+.intro,
+.main-header,
+footer {
+  text-align: center;
+}
+
+.bottom-nav {
+  display: none;
+}
+
+.student-name {
+  font-size: 2.3em;
+  color: #4d4d4d;
+  padding: 10px;
+}
+
+.nav {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  list-style-type: none;
+  display: block;
+  padding: 10px 25px;
+}
+
+.nav li {
+  background-color: #fff;
+  margin: 10px 0 0 0;
+  text-align: center;
+  padding: 25px 0;
+  font-family: 'Heebo', sans-serif;
+}
+
+.main-header,
+.intro {
+  background: #f2f2f2;
+  background-size: cover;
+  padding: 0 0 15px;
+  margin: 0;
+}
+
+.portfolio-photo {
+  width: 93%;
+}
+
+.portfolio-imgs {
+  padding: 0 15px 15px 45px;
+  margin: 10px 0 15px;
+}
+
+footer,
+.name {
+  font-size: 1em;
+  font-family: 'Heebo', sans-serif;
+}
+
+footer {
+  background-color: #f2f2f2;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 28px -16px;
+  width: 100%;
+  clear: both;
+}
+
+.contact {
+  background-color: #f2f2f2;
+  margin: 0 0 50px;
+}
+
+.contact-title {
+  color: #87DFD6;
+}
+
+.contact-paragraph {
+  color: #4d4d4d;
+}
+
+.name {
+  float: left;
+  color: #4d4d4d;
+}
+
+.top-nav {
+  float: right;
+}
+
+.bottom {
+  margin: 25px 15px 35px;
+}
+
+.top {
+  background-color: #f2f2f2;
+}
+
+.portfolio-title {
+  background-color: #ffdd99;
+  margin: 10px 115px 10px;
+  padding: 10px;
+}
+
+#portfolio {
+  background-color: #fff;
+}
+
+.about-section {
+  padding: 25px 50px 25px;
+  background-color: #a6a6a6;
+  font-size: .9em;
+  font-family: 'Berkshire Swash', cursive, sans-serif;
+  color: #fff;
+}
+
+.about-title {
+  background-color: #ffdd99;
+  margin: 10px 115px 10px;
+  padding: 10px;
+}
+
+.intro-paragraph {
+  padding: 0 20px;
+}
+
+.portfolio-imgs p {
+  height: 90px;
+}
+
+/*Media Queries*/
+
+@media (max-width: 308px) {
+  .about-title,
+  .portfolio-title {
+    margin: 15px 300px 15px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .student-name {
+    margin: 20px 0;
+    font-size: 2.5em;
+  }
+
+  .student-name,
+  .main-header,
+  .main-nav li {
+    display: inline-block;
+    background-color: #f2f2f2;
+  }
+
+  .nav {
+    margin: 25px 0;
+    padding: 0;
+  }
+
+  .nav li {
+    padding: 0;
+    margin-right: 50px;
+  }
+
+  .profile-img {
+    float: right;
+    padding: 0 15px;
+    max-width: 40%;
+  }
+
+  .intro-paragraph {
+    margin: 10px 10px;
+    padding: 10px 0;
+    font-size: 1.3em;
+  }
+
+  .intro {
+    padding: 15px 10px 60px;
+  }
+
+  .wrap {
+    min-height: 100vh;
+  }
+
+  .portfolio-imgs {
+    display: inline-block;
+    width: 100%;
+    columns: 2;
+    margin: 5px 0 15px;
+    padding: 0 10px 0 10px;
+  }
+
+  .portfolio-photo {
+    margin: 0 0 15px;
+  }
+
+  .top-nav {
+    display:none;
+  }
+
+  .bottom-nav {
+      float: right;
+      display: inline-block;
+      background-color: #f2f2f2;
+      list-style-type: none;
+      margin: 0;
+    }
+
+    .bottom-nav li {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      margin-right: 50px;
+    }
+
+    .about-section {
+      padding: 50px 150px 50px;
+      background-color: #a6a6a6;
+      font-size: 1.3em;
+      color: #fff;
+    }
+
+    .about-title,
+    .portfolio-title {
+      background-color: #ffdd99;
+      margin: 15px 300px 15px;
+      padding: 15px;
+    }
+}
+
+@media (min-width: 892px) {
+  .profile-img {
+    float: right;
+    padding: 0 15px;
+    max-width: 30%;
+  }
+
+}
+
+@media (min-width: 1000px) {
+  .about-title,
+  .portfolio-title {
+    background-color: #2d3e92;
+    margin: 15px 400px 15px;
+    padding: 10px;
+  }
+
+  .profile-img {
+    float: right;
+    padding: 0 15px;
+    max-width: 30%;
+  }
+}
+
+@media (min-width: 954px) {
+
+  .student-name,
+  .main-header,
+  .main-nav li {
+    display: inline-block;
+    background-color: #ffffff;
+    margin-top: 11;
+    }
+    
+    h1{
+        font-size: 21px;
+        text-align: left;
+        margin-top: 14px;
+    }
+
+  .student-name {
+  
+    float: left;
+    margin-left: 20px;
+    margin-top: 0;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .nav {
+    margin: 0 25px 0;
+    padding: 0;
+  }
+
+  .nav li {
+    padding: 0;
+  }
+
+  .profile-img {
+    float: right;
+    padding: 0 15px 0 100px;
+    max-width: 50%;
+  }
+
+  .intro {
+    padding: 15px 10px 200px;
+  }
+
+  .wrap {
+    min-height: 100vh;
+  }
+
+  .portfolio-imgs {
+    display: inline-block;
+    width: 100%;
+    columns: 3;
+    margin: 25px 0 15px 10px;
+  }
+
+  /* p {
+    margin: 0;
+  } */
+
+  .portfolio-photo {
+    margin-top: 10px;
+   -webkit-border-radius: 4px 44px;
+border-radius: 4px 44px;
+  }
+
+  .main-header {
+    padding: -13px;
+  }
+
+  .top-nav {
+    display:none;
+  }
+
+  .bottom-nav {
+      float: right;
+      display: inline-block;
+      background-color: #f2f2f2;
+      list-style-type: none;
+      margin: 0;
+    }
+
+    .bottom-nav li {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      margin-right: 50px;
+    }
+
+    .about-section {
+      padding: 34px 244px 15px;
+      background-color: #33425B;
+      font-size: -0.1em;
+      color: #fff;
+    }
+
+    .about-title,
+    .portfolio-title {
+      background-color: #ffdd99;
+      margin: 15px 300px 15px;
+      padding: 10px;
+    }
+
+    .intro-paragraph {
+      margin: 10px 10px;
+      padding: 10px 100px;
+    }
+
+  }
+
+  @media (min-width: 1080px) {
+      .about-title,
+      .portfolio-title {
+        background-color: #2a4fa2;
+        margin: 15px 350px 15px;
+        padding: 10px;
+      }
+
+  }
+
+  @media (min-width: 1200px) {
+      .about-title,
+      .portfolio-title {
+        background-color: #87DFD6;
+        margin: 25px 304px 25px;
+        padding: 13px;
+      }
+
+  }
+
+
+    @media (min-width: 1400px) {
+      .about-title,
+      .portfolio-title {
+        background-color: #e4e0d6;
+        margin: 14px 420px -3px;
+        padding: 10px;
+      }
+    }
+    .nav li {
+  
