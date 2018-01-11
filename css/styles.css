@@ -4,8 +4,8 @@
 
 /* Web Fonts */
 @font-face {
-  font-family: 'Oswald';
-  src: url("https://fonts.googleapis.com/css?family=Oswald");
+  font-family: 'BerkshireSwash';
+  src: url("https://fonts.googleapis.com/css?family=Berkshire+Swash");
 }
 
 /*Base styles*/
@@ -28,7 +28,7 @@ body {
 h1 {
   font-size: 3.5em;
   font-family: 'Heebo', sans-serif;
-  margin: 9px;
+  margin: 0;
 }
 
 h2 {
@@ -63,7 +63,7 @@ a:visited {
 }
 
 a:hover {
-  color: #87DFD6; /*on hover*/
+  color: #ffbf80; /*on hover*/
   text-decoration: none;
 }
 
@@ -130,7 +130,7 @@ footer {
   background-color: #f2f2f2;
   justify-content: space-around;
   margin: 0 auto;
-  padding: 28px -16px;
+  padding: 40px 15px;
   width: 100%;
   clear: both;
 }
@@ -141,7 +141,7 @@ footer {
 }
 
 .contact-title {
-  color: #87DFD6;
+  color: #ffc34d;
 }
 
 .contact-paragraph {
@@ -309,7 +309,7 @@ footer {
 @media (min-width: 1000px) {
   .about-title,
   .portfolio-title {
-    background-color: #2d3e92;
+    background-color: #ffdd99;
     margin: 15px 400px 15px;
     padding: 10px;
   }
@@ -321,27 +321,18 @@ footer {
   }
 }
 
-@media (min-width: 954px) {
+@media (min-width: 1024px) {
 
   .student-name,
   .main-header,
   .main-nav li {
     display: inline-block;
-    background-color: #ffffff;
-    margin-top: 11;
-    }
-    
-    h1{
-        font-size: 21px;
-        text-align: left;
-        margin-top: 14px;
+    background-color: #f2f2f2;
     }
 
   .student-name {
-  
     float: left;
-    margin-left: 20px;
-    margin-top: 0;
+    margin-left: 25px;
   }
 
   .main-nav {
@@ -384,12 +375,11 @@ footer {
 
   .portfolio-photo {
     margin-top: 10px;
-   -webkit-border-radius: 4px 44px;
-border-radius: 4px 44px;
+    border-radius: 4px 44px;
   }
 
   .main-header {
-    padding: -13px;
+    padding: 25px;
   }
 
   .top-nav {
@@ -412,9 +402,9 @@ border-radius: 4px 44px;
     }
 
     .about-section {
-      padding: 34px 244px 15px;
-      background-color: #33425B;
-      font-size: -0.1em;
+      padding: 50px 300px 50px;
+      background-color: #a6a6a6;
+      font-size: .9em;
       color: #fff;
     }
 
@@ -435,7 +425,7 @@ border-radius: 4px 44px;
   @media (min-width: 1080px) {
       .about-title,
       .portfolio-title {
-        background-color: #2a4fa2;
+        background-color: #ffdd99;
         margin: 15px 350px 15px;
         padding: 10px;
       }
@@ -446,8 +436,8 @@ border-radius: 4px 44px;
       .about-title,
       .portfolio-title {
         background-color: #87DFD6;
-        margin: 25px 304px 25px;
-        padding: 13px;
+        margin: 15px 350px 15px;
+        padding: 10px;
       }
 
   }
@@ -456,10 +446,8 @@ border-radius: 4px 44px;
     @media (min-width: 1400px) {
       .about-title,
       .portfolio-title {
-        background-color: #e4e0d6;
-        margin: 14px 420px -3px;
+        background-color: #ffdd99;
+        margin: 15px 600px 15px;
         padding: 10px;
       }
     }
-    .nav li {
-  
